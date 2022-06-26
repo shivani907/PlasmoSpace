@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="8dp"
+        android:background="#EE4B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView"
+            android:layout_width="177dp"
+            android:layout_height="192dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/profile_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Your Address"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_number"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/profile_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Phone Number"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="182dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/top_button_bg"
+        android:padding="14dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_location" />
+
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Email"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Your Name"
+        android:padding="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintWidth_percent=".8"
+        tools:layout_editor_absoluteX="45dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
